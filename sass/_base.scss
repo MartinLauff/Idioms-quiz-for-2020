@@ -1,0 +1,39 @@
+// FONT VARIABLES
+$font-primary: "Lato", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-primary;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(6, 20vh);
+  grid-template-columns: repeat(9, minmax(15rem, auto));
+}
+
+h1 {
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+::selection {
+  background-color: #fff;
+  color: #1837ff;
+}

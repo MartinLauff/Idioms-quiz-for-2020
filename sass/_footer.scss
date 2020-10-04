@@ -1,0 +1,11 @@
+.footer {
+  background-color: #101d2c;
+  grid-row: 6 / 7;
+  grid-column: 1 / span 9;
+  font-size: 1.4rem;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
