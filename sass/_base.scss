@@ -1,5 +1,6 @@
 // FONT VARIABLES
 $font-primary: "Lato", sans-serif;
+$btn-color: #ff0000;
 
 *,
 *::before,
@@ -24,7 +25,7 @@ body {
 .container {
   display: grid;
   grid-template-rows: repeat(6, 20vh);
-  grid-template-columns: repeat(9, minmax(15rem, auto));
+  grid-template-columns: repeat(9, minmax(15rem, min-content));
 }
 
 h1 {
@@ -36,4 +37,42 @@ h1 {
 ::selection {
   background-color: #fff;
   color: #1837ff;
+}
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    color: $btn-color;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid $btn-color;
+    padding: 3px;
+    transition: all 0.2s;
+    grid-row: 13 / 14;
+    font-weight: 400;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: $btn-color;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.15);
+    transform: translateY(-4px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+    transform: translateY(0);
+  }
+
+  &__list {
+    grid-column: 2 / 3;
+  }
+
+  &__next {
+    grid-column: 10 / 11;
+  }
 }
