@@ -76,3 +76,13 @@ h1 {
     grid-column: 10 / 11;
   }
 }
+
+.list__link {
+  &,
+  &:link,
+  &:visited {
+    color: currentColor;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
