@@ -24,8 +24,8 @@ $color-pink: #ff3cec;
 
   display: grid;
   grid-template-rows: repeat(20, minmax(5vh, min-content));
-  grid-template-columns: repeat(8, minmax(15rem, min-content));
-
+  grid-template-columns: repeat(11, minmax(12.3rem, min-content));
+  // 9 - 15rem
   @keyframes effect {
     0% {
       background-position: 0% 25%;
@@ -39,7 +39,7 @@ $color-pink: #ff3cec;
   }
 
   &__overview {
-    grid-column: 3 / 8;
+    grid-column: 4 / 9;
 
     &--heading {
       display: flex;
