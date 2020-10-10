@@ -1,11 +1,19 @@
 .footer {
-  background-color: #101d2c;
   grid-row: 6 / 7;
-  grid-column: 1 / span 9;
+  grid-column: 1 / span 10;
+
+  display: grid;
+  grid-template-columns: repeat(10, minmax(15rem, min-content));
+  background-color: #101d2c;
+
   font-size: 1.4rem;
+  font-weight: 300;
   color: #fff;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__text {
+    grid-column: 4 / 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
